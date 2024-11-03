@@ -3,78 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terrorism Analysis and Insights</title>
-    <!-- Plotly.js -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <!-- Mapbox GL JS -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Image Display</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Terrorism Analysis and Insights</h1>
-        
-        <div class="filters-section">
-            <div class="filter-group">
-                <label for="region-select">Select Region(s)</label>
-                <select id="region-select" multiple>
-                    <!-- Populated by JavaScript -->
-                </select>
-            </div>
-            
-            <div class="filter-group">
-                <label for="country-select">Select Country(s)</label>
-                <select id="country-select" multiple>
-                    <!-- Populated by JavaScript -->
-                </select>
-            </div>
-            
-            <div class="filter-group">
-                <label for="attack-type-select">Select Attack Type(s)</label>
-                <select id="attack-type-select" multiple>
-                    <!-- Populated by JavaScript -->
-                </select>
-            </div>
-        </div>
-
-        <div class="year-filter">
-            <label for="year-range">Year Range:</label>
-            <div id="year-slider"></div>
-            <span id="year-range-display"></span>
-        </div>
-
-        <div id="loading-spinner" class="loader" style="display: none;"></div>
-        
-        <div id="map-container"></div>
-        
-        <div class="statistics-container">
-            <h3>Key Statistics</h3>
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <h4>Total Incidents</h4>
-                    <p id="total-incidents">0</p>
-                </div>
-                <div class="stat-box">
-                    <h4>Total Casualties</h4>
-                    <p id="total-casualties">0</p>
-                </div>
-                <div class="stat-box">
-                    <h4>Most Affected Country</h4>
-                    <p id="most-affected-country">-</p>
-                </div>
-                <div class="stat-box">
-                    <h4>Most Common Attack Type</h4>
-                    <p id="most-common-attack">-</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Custom JavaScript -->
-    <script src="config.js"></script>
-    <script src="data.js"></script>
-    <script src="app.js"></script>
+    <img src="IMG_4015.png" alt="Description of the image">
 </body>
 </html>
